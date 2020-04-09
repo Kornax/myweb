@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Ernesto Abreu | Contact me</title>
+    <meta charset="utf-8"/>
+    <title>Ernesto Abreu</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="body-group">
-            <div class="left-sidebar-group">
+        <div class="left-sidebar-group">
             <div class="main-profile-group">
                 <div class="profile-image">
                     <img src="images/profile.jpg">
                 </div>
-                <div class="profile-name">
-                    Ernesto Abreu
-                </div>
             </div>
             <div class="main-menu-group">
-                <a href="index.html">home</a>
-                <a href="about.html">about</a>
-                <a href="blog.html">blog</a>
-                <a class="active" href="contact.html">contact</a>
+                    <a href="index.html">projects</a>
+                    <a href="about.html">about</a>
+                    <a href="blog.html">blog</a>
+                    <a class="active" href="contact.html">contact</a>
             </div>
             <div class="social-media-group">
-                <a href="https://www.youtube.com/channel/UCMAkgFk1X_JjODhn3a2R4nQ?view_as=subscriber"><img src="images/logos/youtube.svg"></a>
-                <a href="http://github.com/Kornax"><img src="images/logos/github.svg"></a>
-                <a href="https://www.instagram.com/erne1224/"><img src="images/logos/instagram.svg"></a>
-                <a href="http://www.twitter.com/Kornax24"><img src="images/logos/twitter.svg"></a>
-                <a href="https://www.linkedin.com/in/jos%C3%A9-ernesto-abreu-gentini-141008152/"><img src="images/logos/linkedin.svg"></a>
+                <a target="_blank" href="https://www.instagram.com/erne1224/"><img src="images/logos/instagram.svg"></a>
+                <a target="_blank" href="http://www.twitter.com/Kornax24"><img src="images/logos/twitter.svg"></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCp9-z6XY7vfvuclAesq56aw"><img src="images/logos/youtube.svg"></a>
+                <a target="_blank" href="http://github.com/Kornax"><img src="images/logos/github.png"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-ernesto-abreu-gentini-141008152/"><img src="images/logos/linkedin.svg"></a>
             </div>
             <div class="made-by-group">
                 Made with 🛠 & ❤ by me. © 2020
             </div>
-        </div>   
-        <p>Contact me</p>
+        </div>    
+        <div class="contact-group">
+            <div class="contact-form">
+                <form action="action_page.php">
+                    <div class="form-item">
+                        <label for="fname">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+                    </div>
+                    <div class="form-item">
+                        <label for="lname">Email Address</label>
+                        <input type="text" id="email" name="email" placeholder="Your email...">
+                    </div>
+                    <div class="form-item">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div> 
+        </div>
     </div>   
 </body>
 </html>
