@@ -23,7 +23,7 @@
             <div class="social-media-group">
                 <a target="_blank" href="https://www.instagram.com/erne1224/"><img src="images/logos/instagram.svg"></a>
                 <a target="_blank" href="http://www.twitter.com/Kornax24"><img src="images/logos/twitter.svg"></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCMAkgFk1X_JjODhn3a2R4nQ?view_as=subscriber"><img src="images/logos/youtube.svg"></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCp9-z6XY7vfvuclAesq56aw"><img src="images/logos/youtube.svg"></a>
                 <a target="_blank" href="http://github.com/Kornax"><img src="images/logos/github.png"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-ernesto-abreu-gentini-141008152/"><img src="images/logos/linkedin.svg"></a>
             </div>
@@ -39,17 +39,16 @@
                     <div class="project-icon">
                         <img src="images/logos/headphones.svg">
                     </div>
-                    <p>Social App where people share how music changes every scenery</p>
+                    <p>Social App where people share the perfect song to listen while being in a location.</p>
                 </div>  
             </div>
             <div class="project-item">
-                <div class="project-background-image" style="background-image:url(images/project-backgrounds/mosaic-whallpaper.jpg)">
-                </div>
+                <div class="project-background-image" style="background-image:url(images/project-backgrounds/mosaic-whallpaper.jpg)"></div>
                 <div class="project-text-icon-group">
                     <div class="project-icon">
                         <img src="images/logos/smartphone.svg">
                     </div>  
-                    <p>Whallpaper generator based on an input of symbols, emojis and drawings</p>
+                    <p>Whallpaper generator based on an input of symbols, emojis and drawings.</p>
                 </div>  
             </div>
             <div class="project-item">
@@ -59,7 +58,7 @@
                     <div class="project-icon">
                         <img src="images/logos/quantified-country.png">
                     </div>
-                    <p>Data driven app where people can create a costum index of their country, follow historic trends and copare it with the world</p>
+                    <p>Data driven app where people can create a costum index of their country, follow historic trends and copare it with the world.</p>
                 </div>  
             </div>
             <div class="project-item">
@@ -77,14 +76,14 @@
 </body>
 <script>
     const projectItems = document.querySelectorAll('.project-item')
-
     projectItems.forEach(projectItem => {
         projectItem.addEventListener('mouseover', () => {
             projectItem.childNodes[1].classList.add('img-brighter');
-            console.log(projectItem.childNodes[2].classList)
+            projectItem.querySelector('.project-icon').classList.add('img-darken');
         })
         projectItem.addEventListener('mouseout', () => {
             projectItem.childNodes[1].classList.remove('img-brighter');
+            projectItem.querySelector('.project-icon').classList.remove('img-darken');
         })
     })
 </script>
