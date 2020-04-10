@@ -24,7 +24,6 @@ bold{
     background-size: cover;
 }
 
-
 .left-sidebar-group > .main-profile-group > .profile-image img{
     width: 100px;
     height: auto;
@@ -155,6 +154,7 @@ bold{
 .about-group{
     display: grid;
     grid-template-columns: 1fr;
+    overflow-y: scroll;
 }
 
 .about-group > .about-image-container{
@@ -189,7 +189,7 @@ bold{
 /* Blog Styles */
 
 .blog-group{
-    padding: 50px;
+    padding: 10%;
     overflow-y: scroll;
 }
 
@@ -241,4 +241,94 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     background-color: rgb(0, 94, 94);
+}
+
+
+/* Mobile Compatibility */
+@media (max-width : 740px) {
+    .left-sidebar-group {
+        overflow: hidden !important;
+    }
+    .body-group{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 75px 1fr !important;
+    }
+    .left-sidebar-group{
+        grid-template-rows: 1fr !important;
+        grid-template-columns: 1fr 5fr !important;
+        width: 100% !important;
+        height: 75px !important;
+    }
+
+    .profile-image{
+        max-height: 75px !important;
+    }
+
+    .profile-image img{
+        width: auto !important;
+        max-height: 75px !important;
+        box-sizing: border-box !important;
+        padding: 10% !important;
+        margin: 0px !important;
+        align-items: center !important;
+    }
+
+    .left-sidebar-group > .main-menu-group {
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+        top: 0px !important;
+        align-items: center !important;
+    }
+
+    .left-sidebar-group > .main-menu-group a{
+        font-size: 100% !important;
+        width: auto !important;
+        margin: 1% !important  ;
+    }
+
+    .left-sidebar-group > .social-media-group{
+        display: none !important;
+    }
+
+    .left-sidebar-group > .made-by-group{
+        display: none !important;
+    }
+    h1{
+        font-size: x-large !important;
+    }
+    p{
+        font-size: large !important;
+    }
+
+    .about-group > .about-text h1{
+        font-size: xx-large !important;
+    }
+    
+    .about-group > .about-text p{
+        font-size: large !important;
+    }
+
+    .about-image-container{
+        height: 650px !important;
+    }
+
+    .all-projects-group {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: none !important;
+        overflow-y: scroll !important;
+    }
+    .about-group > .about-image-container > .about-image{
+        background-position: left !important;
+    }
+
+    
+    .project-text-icon-group .project-icon img{
+        height: 50px;
+        margin-top: 20%;
+    }
+    
+    .project-text-icon-group p{
+        margin: 5%;
+        font-size: small !important;
+    }
 }
