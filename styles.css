@@ -157,16 +157,24 @@ bold{
     grid-template-columns: 1fr;
 }
 
-.about-group > .about-image{
+.about-group > .about-image-container{
+    overflow: hidden;
+}
+
+.about-group > .about-image-container > .about-image{
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 0.5s;
+    transition: 2s;
     /* --x: 0px;
     --y: 0px;
     background-position: var(--x) var(--y); */
+}
+
+.img-zoomer{
+    transform: scale(110%) translateX(-20px);
 }
 
 .about-group > .about-text h1{

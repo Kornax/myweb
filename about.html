@@ -32,7 +32,9 @@
             </div>
         </div>    
         <div class="about-group">
-            <div class="about-image" style="background-image:url(images/about-image.jpg)"></div>
+            <div class="about-image-container">
+                <div class="about-image" style="background-image:url(images/about-image.jpg)"></div>
+            </div>
             <div class="about-text">
                 <h1>Fast learner and passionate about everything I do   ...</h1>
                 <p>With a Win/Win mentality, I persue to always embrace a positive attitude and willingness for constructive criticism. Intrested in a diversity of topics (philosophy, psychology, videogames, programming, music, acting, etc.).</p>
@@ -41,11 +43,13 @@
     </div>   
 </body>
 <script>
-    // const el = document.querySelector(".about-image");
-    // el.addEventListener("mousemove", (e) => {
-    //     el.style.setProperty('--x', -e.offsetX + "px");
-    //     el.style.setProperty('--y', -e.offsetY + "px");
-    //     }
-    // );
+    const aboutImage = document.querySelector('.about-image-container')
+    aboutImage.addEventListener('mouseover', () => {
+        console.log(aboutImage.childNodes[1].classList)
+        aboutImage.childNodes[1].classList.add('img-zoomer');
+    })
+    aboutImage.addEventListener('mouseout', () => {
+        aboutImage.childNodes[1].classList.remove('img-zoomer');
+    })
 </script>
 </html>
