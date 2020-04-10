@@ -165,12 +165,9 @@ bold{
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     transition: 2s;
-    /* --x: 0px;
-    --y: 0px;
-    background-position: var(--x) var(--y); */
 }
 
 .img-zoomer{
@@ -189,7 +186,8 @@ bold{
 /* Blog Styles */
 
 .blog-group{
-    padding: 10%;
+    padding: 5% ;
+    padding-top: 2%;
     overflow-y: scroll;
 }
 
@@ -245,7 +243,7 @@ input[type=submit]:hover {
 
 
 /* Mobile Compatibility */
-@media (max-width : 740px) {
+@media only screen and (max-device-width : 740px) {
     .left-sidebar-group {
         overflow: hidden !important;
     }
@@ -317,10 +315,6 @@ input[type=submit]:hover {
         grid-template-rows: none !important;
         overflow-y: scroll !important;
     }
-    .about-group > .about-image-container > .about-image{
-        background-position: left !important;
-    }
-
     
     .project-text-icon-group .project-icon img{
         height: 50px;
