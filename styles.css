@@ -279,9 +279,10 @@ input[type=submit]:hover {
     }
 
     .left-sidebar-group > .main-menu-group a{
-        font-size: 100% !important;
+        font-size: xx-large !important;
+        padding: %;
         width: auto !important;
-        margin: 1% !important  ;
+        margin: 0px !important  ;
     }
 
     .left-sidebar-group > .social-media-group{
